@@ -15,7 +15,9 @@ elemento("data-de-hoje").textContent = hoje;
 console.log(`TaskFlow iniciado. Autor: ${autor}`); // aparece no F12
 
 // ---------- Parte 3: o array e os laços ----------
+
 const lista = elemento("lista");
+
 // LAÇO 1 — for...of: percorre os valores, sem índice
 for (const tarefa of tarefas) {
 
@@ -40,8 +42,8 @@ for (const tarefa of tarefas) {
 // LAÇO 2 — for com índice: contando as pendentes
 let pendentes = 0;
 for (let i = 0; i < tarefas.length; i++) {
-if (tarefas[i].status === "pendente") {
-pendentes++;
+    if (tarefas[i].status === "pendente") {
+        pendentes++;
 }
 }
 elemento("total").textContent = String(tarefas.length);
