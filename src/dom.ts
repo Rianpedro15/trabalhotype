@@ -1,5 +1,7 @@
 // Vem pronto desde a Aula 1. Três funções que conversam com a tela.
 
+//RESPONSAVEL POR TRASMITIR AS INFORMAÇÕES DO HTML PARA O TYPE
+
 export function elemento(id: string): HTMLElement {
   const encontrado = document.getElementById(id);
   if (!encontrado) {

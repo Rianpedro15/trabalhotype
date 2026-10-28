@@ -1,3 +1,6 @@
+
+//CRIA A ABA DE CRIAR NOVA TAREFAS
+
 import type { NovaTarefa, Tarefa } from "./tipos";
 
 // Gera o próximo id a partir do maior id já existente
@@ -18,7 +21,7 @@ export function adicionarTarefa(lista: Tarefa[], dados: NovaTarefa): Tarefa {
     const tarefa: Tarefa = {
         ...dados,
         id: gerarId(lista),
-        status: "pendente",
+        status: "aberto",
         criadaEm: new Date(),
     };
     lista.push(tarefa);

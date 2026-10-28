@@ -30,14 +30,14 @@ function desenhar(): void {
 
     const itens = transformar(lista, criarItem); // a SUA função de alta ordem
         elemento("lista").replaceChildren(...itens);
-    let pendentes = 0;
+    let abertos = 0;
         for (const tarefa of lista) {
-        if (tarefa.status === "pendente") {
-            pendentes++;
+        if (tarefa.status === "aberto") {
+            abertos++;
         }
     }
     elemento("total").textContent = String(lista.length);
-    elemento("pendentes").textContent = String(pendentes);
+    elemento("abertos").textContent = String(abertos);
 }
 // O formulário: a função abaixo é um CALLBACK — quem a chama é o navegador
 elemento("formulario").addEventListener("submit", (evento) => {

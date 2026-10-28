@@ -1,5 +1,8 @@
-export type Prioridade = "baixa" | "media" | "alta";
-export type Status = "pendente" | "em_andamento" | "concluida";
+
+//ELE DEFINE O TIPO DE TAREFAS 
+
+export type Prioridade = "curto_prazo" | "medio prazo" | "longo prazo";
+export type Status = "aberto" | "lotado" | "encerrado";
 
 export interface Tarefa {
     readonly id: number;
