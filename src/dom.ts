@@ -23,6 +23,3 @@ export function selecao(id: string): HTMLSelectElement {
   }
   return encontrado;
 }
-oo
-
-aaaaaaaaaaaaaa
