@@ -1,4 +1,5 @@
 # type
 
 
-1° dia - alterração das situações e dos status
+30/10 - AMANDA ATUALIZOU O CODIGO
+
