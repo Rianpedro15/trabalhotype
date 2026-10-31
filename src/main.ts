@@ -1,8 +1,14 @@
-import { campo, elemento, selecao } from "./dom";
-import { tarefas } from "./dados";
-import type { Prioridade, Tarefa } from "./tipos";
-import { adicionarTarefa, transformar } from "./servicos";
-elemento("nome-do-sistema").textContent = "TaskFlow";
+import { elemento, campo, selecao } from "./dom"; //importa os campos criados no DOOM
+
+import { tarefas } from "./dados"; //importa o modelo das tarefas do banco
+
+import type { Prioridade, Tarefa } from "./tipos"; //importa o tipo da tarefa (prioridade, status)
+
+import { adicionarTarefa, transformar } from "./servicos"; //o usuario add uma nova tarefa
+
+
+
+elemento("nome-do-sistema").textContent = "EVENTOS FACUL";
 elemento("versao").textContent = "v0.2.0";
 elemento("data-de-hoje").textContent = new Date().toLocaleDateString("pt-BR");
 // O estado do programa: a lista que está valendo agora

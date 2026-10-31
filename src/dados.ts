@@ -15,7 +15,7 @@ export const tarefas: Tarefa[] = [
     },
     { 
         id: 2, 
-        titulo: "Comprar café", 
+        titulo: "Evento 2", 
         prioridade: "curto_prazo", 
         status: "encerrado",
         tags: ["casa"], 
@@ -23,7 +23,7 @@ export const tarefas: Tarefa[] = [
     },
     { 
         id: 3, 
-        titulo: "Revisar pull request", 
+        titulo: "Evento 3", 
         descricao: "PR #42", 
         prioridade: "longo prazo",
         status: "lotado", 
@@ -32,7 +32,7 @@ export const tarefas: Tarefa[] = [
     },
     { 
         id: 4, 
-        titulo: "Praticar laços", 
+        titulo: "Evento 4", 
         prioridade: "medio prazo", 
         status: "aberto",
         tags: ["estudo", "ts"], 
@@ -40,7 +40,7 @@ export const tarefas: Tarefa[] = [
     },
     { 
         id: 5, 
-        titulo: "Agendar dentista", 
+        titulo: "Evento 5", 
         prioridade: "medio prazo", 
         status: "aberto",
         tags: ["saude"], 
@@ -48,7 +48,7 @@ export const tarefas: Tarefa[] = [
     },
     { 
         id: 6, 
-        titulo: "Organizar a mesa", 
+        titulo: "Evento 6", 
         prioridade: "curto_prazo", 
         status: "aberto",
         tags: ["casa"], 

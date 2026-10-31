@@ -2,7 +2,7 @@
 :root {
   --fundo: #f4f6fa; --cartao: #ffffff; --texto: #1f1f1f; --suave: #5b6472;
   --azul: #0a468c; --borda: #dfe4ec;
-  --alta: #d64545; --media: #e8892c; --baixa: #2e9e5b; --amarelo: #f9c21a;
+  --longo_prazo: #d64545; --medio_prazo: #e8892c; --curto_prazo: #2e9e5b; --amarelo: #f9c21a;
 }
 :root[data-tema="escuro"] {
   --fundo: #11161f; --cartao: #1a2130; --texto: #e8ecf2; --suave: #9aa5b5;
@@ -27,13 +27,13 @@ main, .entrada { max-width: 880px; margin: 24px auto; padding: 0 16px; }
 .campo__rotulo { font-size: .85rem; color: var(--suave); }
 .campo__entrada, .campo__selecao, .busca { padding: 8px 10px; border: 1px solid var(--borda); border-radius: 6px;
   background: var(--cartao); color: var(--texto); font: inherit; }
-.campo__erro { color: var(--alta); min-height: 1.2em; margin: 8px 0; }
+.campo__erro { color: var(--longo_prazo); min-height: 1.2em; margin: 8px 0; }
 .botao { padding: 8px 14px; border: 1px solid var(--borda); border-radius: 6px; background: var(--cartao);
   color: var(--texto); font: inherit; cursor: pointer; }
 .botao--primario { background: var(--azul); color: #fff; border-color: var(--azul); }
 .botao--pequeno { padding: 4px 10px; font-size: .85rem; }
-.botao--sucesso { border-color: var(--baixa); color: var(--baixa); }
-.botao--perigo { border-color: var(--alta); color: var(--alta); }
+.botao--sucesso { border-color: var(--curto_prazo); color: var(--curto_prazo); }
+.botao--perigo { border-color: var(--longo_prazo); color: var(--longo_prazo); }
 .aviso { background: #fff6d6; color: #5c4600; border-left: 4px solid var(--amarelo); padding: 10px 14px; border-radius: 6px; }
 .aviso--oculto { display: none; }
 .estatisticas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
@@ -46,17 +46,17 @@ main, .entrada { max-width: 880px; margin: 24px auto; padding: 0 16px; }
 .filtro--ativo { background: var(--azul); color: #fff; border-color: var(--azul); }
 .lista { list-style: none; padding: 0; display: grid; gap: 10px; }
 .tarefa { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; background: var(--cartao);
-  border: 1px solid var(--borda); border-left: 6px solid var(--media); border-radius: 10px; padding: 12px 16px; }
-.tarefa--alta { border-left-color: var(--alta); }
-.tarefa--baixa { border-left-color: var(--baixa); }
+  border: 1px solid var(--borda); border-left: 6px solid var(--medio_prazo); border-radius: 10px; padding: 12px 16px; }
+.tarefa--longo_prazo { border-left-color: var(--longo_prazo); }
+.tarefa--curto_prazo { border-left-color: var(--curto_prazo); }
 .tarefa--concluida { opacity: .6; }
 .tarefa--concluida .tarefa__titulo { text-decoration: line-through; }
-.tarefa--atrasada { box-shadow: inset 0 0 0 2px var(--alta); }
+.tarefa--atrasada { box-shadow: inset 0 0 0 2px var(--longo_prazo); }
 .tarefa__titulo { margin: 0 0 4px; font-size: 1.05rem; }
 .tarefa__descricao { margin: 0 0 6px; color: var(--suave); }
 .tarefa__meta, .tarefa__acoes { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
 .etiqueta, .tag { font-size: .75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--borda); }
-.etiqueta--alta { color: var(--alta); } .etiqueta--media { color: var(--media); } .etiqueta--baixa { color: var(--baixa); }
+.etiqueta--longo_prazo { color: var(--longo_prazo); } .etiqueta--medio_prazo { color: var(--medio_prazo); } .etiqueta--curto_prazo { color: var(--curto_prazo); }
 .tag { color: var(--suave); }
 .etiqueta--status { color: var(--suave); }
 .tarefa__principal { flex: 1 1 260px; min-width: 0; }
